@@ -1,6 +1,6 @@
 {
   "name": "everynews",
-  "homepage": "https://form-validation-without-thirdp.herokuapp.com/",
+  "homepage": "https://everynews.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
