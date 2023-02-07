@@ -1,0 +1,190 @@
+.mycard {
+    width:40%;
+    max-width: 40%;
+    height:300px;
+    
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: grey 10px;
+    background-color: rgb(159, 159, 159);
+
+}
+.cardIimage {
+    width: 100%;
+
+  
+   
+    align-items: center;
+    
+}
+
+.cardImage img{
+    
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            padding: 5px;
+            width: 140px;
+            height: 140px;
+           
+            padding: auto;
+        
+          
+    
+}
+.cardImageProfile{
+
+   
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+margin-left: auto;
+margin-right: auto;
+    padding: auto;
+
+
+
+}
+.profileName {
+
+
+    padding: 15px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+
+
+
+}
+.button {
+    background-color: #1c1d1c;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100% !important;
+    border-radius: 20px;
+}
+
+.button2 {
+   
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px !important;
+    border-radius: 20px;
+}
+.button:hover {
+
+            background-color: #404240;
+        transition: 0.3s;
+}
+
+.cardInformation {
+    padding :10px;
+   
+}
+.profile--justify{
+    display: flex;
+    padding:40px;
+    width: 100%;
+    justify-content: space-between;
+}
+.createBlog{
+    width: 50%;
+        max-width: 50%;
+    
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: grey 10px;
+        background-color: rgb(159, 159, 159);
+}
+small {
+    color:rgb(125, 124, 126);
+    
+}
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.successMessage{
+    width: 100px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: aliceblue;
+    padding:10px
+}
+.errorsMessage {
+    width: 100px;
+    text-align: center;
+    background-color: #9a1f00;
+    color: aliceblue;
+    padding: 10px
+}
+textarea
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#demo-file::file-selector-button {
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+#demo-file::file-selector-button:hover {
+    background-color: #e9e9e9;
+}
+
+#demo-file::-webkit-file-upload-button {
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+#demo-file::-webkit-file-upload-button:hover {
+    background-color: #e9e9e9;
+}
+.uploadContainer {
+    display: flex;
+    justify-content: space-between;
+}
