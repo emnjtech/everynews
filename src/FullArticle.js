@@ -126,7 +126,7 @@ export default function FullArticle() {
                             <button onClick={handleAddComment} className='bg-green-400 my-2 flex justify-center items-center px-3'><Icon icon="ri:send-plane-fill" /><h1 className='text-sm'>Send</h1></button>
                         </div>
                        : <div className='flex text-[9px] my-2'> <h1>
-                       <Link to='/login'><b className='text-blue-600'>Login </b>or 
+                       <Link to='/signIn'><b className='text-blue-600'>Login </b>or 
                        <b className='text-blue-600'> register </b> </Link></h1> <h1 className='px-1'> to like or comment</h1></div>
                 }
                        {article.comments && article.comments?.map(({user,comment,createdAt,commentId}) =>(
