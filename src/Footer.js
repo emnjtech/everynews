@@ -37,26 +37,7 @@ export default function Footer() {
 
                 </div>
 
-                    <div className=' md:w-[30%] w-full mt-8'>
-                        <h1 className=' font-bold text-sm text-slate-500'>ADDRESS</h1>
-                        <div className='mt-3 flex justify-start items-center'> <Icon icon="material-symbols:home-rounded" />
-                            <p className='text-white text-[12px] px-2'><b>Head Office:</b> Shop B02 Head Office street. Head Office Building, Lagos, Nigeria</p>
-                        </div>
-
-
-
-
-                        <div className='mt-3 flex justify-start items-center'> <Icon icon="material-symbols:home-rounded" />
-                            <p className='text-white text-[12px] px-2'><b>Branch Office:</b> Shop 100 Branch Office Building, Abuja, Nigeria</p>
-                        
-                        </div>
-
-
-                        <div className='mt-3 flex justify-start items-center'> <Icon icon="ph:phone-fill" />
-                            <p className='text-white text-[12px] px-2'>+234111222333444555, +234222333444555</p></div>
-                       
-
-                    </div>
+                   
                
 
 

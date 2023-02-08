@@ -19,6 +19,7 @@ import Sports from './Sports';
 import Entertainment from './Entertainment';
 import Business from './Business';
 import WorldNews from './WorldNews';
+import PageNotFound from './PageNotFound';
 function App() {
 
   return (
@@ -44,13 +45,20 @@ function App() {
           <Footer/>
           </>
         }/>
+        <Route path="*" element={
+            <>
+
+              <PageNotFound />
+              <Footer />
+
+            </>} />
 
          <Route path='/article/:id' element={
-          <>
+          <div>
           <Header/>
           <FullArticle/>
           <Footer/>
-          </>
+          </div>
         }/>
 
         <Route path='/createArticle' element={

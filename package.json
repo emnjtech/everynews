@@ -1,6 +1,6 @@
 {
   "name": "everynews",
-  "homepage": "https://everynews.herokuapp.com/",
+  "homepage": "https://everynews.emnj.tech/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

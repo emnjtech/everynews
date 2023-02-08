@@ -1,7 +1,8 @@
 import React,{useState, useEffect} from 'react'
 import { useNavigate, useParams,Link } from 'react-router-dom'
 import {  db } from './admin/firebaseConfig'
-import { getDocs, 
+import { getDoc, 
+    getDocs,
     doc, 
     onSnapshot,
     where,limit,collection, 
@@ -24,21 +25,23 @@ export default function FullArticle() {
     const commentRef = doc(db, 'posts',id)
    
     useEffect(() => {
+        
         const getFullArticle = ()=>{
             const docRef = doc(db, "posts", id);
-            onSnapshot(docRef, (snapshot) => {
-                setArticle({ ...snapshot.data(), id: snapshot.id });
+            onSnapshot(docRef,(i)=>{
+                setArticle({...i.data(),id:i.id})
+            })
+                
                
-            });
+            
         }
-
-        
-
 
      getFullArticle()
     
-    }, []);
-
+    }, [id]);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      });
     useEffect(()=>{
         const getSuggestions = async () => {
             const newQuery = query(collection(db, "posts"), where("category","==",article?.category),where("title", "!=",article?.title), limit(4))
@@ -152,13 +155,16 @@ export default function FullArticle() {
                 <div className='p-4 md:w-[30%]'>
                     <h1 className='font-bold text-center'>RELATED NEWS</h1>
                     {suggestions && suggestions?.map((item)=>(
+                    <div key={item.id} className='mb-8'>
                         <Article 
+                        id={item.id}
                         title={item.title}
                         content={item.content}
                         image={item.imageUrl}
                         author={item.name}
                         createdOn={item.createdOn}
                         />
+                    </div>
 
                     ))
                     }

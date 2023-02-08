@@ -87,9 +87,9 @@ export default function Home() {
         category,
         video,
       }) =>  (
-              <div> 
+              <div key={id}> 
                <Article
-               key={id}
+               
                id ={id}
                title ={title}
                content ={content}
@@ -125,9 +125,9 @@ export default function Home() {
         category,
         video,
       }) =>  (
-               <div>
+               <div key={id}>
                   <ArticleBottom 
-                  key={id}
+                  
                   id ={id}
                   title ={title}
                   content ={content}
@@ -161,9 +161,9 @@ export default function Home() {
         category,
         video,
       }) =>  (
-                 <div>
+                 <div key={id}>
                   <ArticleRight 
-                  key={id}
+                  
                   id ={id}
                   title ={title}
                   content ={content}
@@ -200,7 +200,7 @@ export default function Home() {
                <div>
                
                   <ArticleRB
-                  key={id}
+                  
                   id ={id}
                   title ={title}
                   content ={content}
